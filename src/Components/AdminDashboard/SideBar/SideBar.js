@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 
 const SideBar = () => {
     return (
-        <div className="w-100" style={{height:"100vh", backgroundColor:'#82ccdd'}}>
+        <div  style={{height:"100vh", backgroundColor:'#82ccdd'}}>
         <div className="selection-part text-center"> 
        <br/>
        <br/>

@@ -1,12 +1,12 @@
 import React from 'react';
+import HomeLayout from './HomeLayout';
 import Navbar from './Navbar/Navbar';
-import HomeBlogs from './HomeBlogs/HomeBlog';
 
 const Home = () => {
     return (
         <div>
-            <Navbar/>
-            <HomeBlogs/>
+            <Navbar />
+            <HomeLayout />
         </div>
     );
 };

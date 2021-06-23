@@ -13,7 +13,7 @@ const Navbar = () => {
     <div className="collapse navbar-collapse" id="navbarNav" style={{fontSize:"20px", fontWeight:"600", userSelect:'none', justifyContent:"flex-end"}}>
       <ul className="navbar-nav">
         <li className="nav-item">
-          <Link className="nav-link" href="#"> Blogs </Link>
+          <Link className="nav-link" to="/blogs"> Blogs </Link>
         </li>
         <li className="nav-item ">
           <Link className="nav-link" href="#">Features</Link>
