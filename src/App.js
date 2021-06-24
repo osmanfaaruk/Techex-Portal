@@ -5,6 +5,7 @@ import AdminPanel from './Components/AdminDashboard/AdminPanel/AdminPanel';
 import BlogCard from './Components/Home/Blogs/BlogCard';
 import FullBlog from './Components/Home/FullBlog/FullBlog';
 import Navbar from './Components/Home/Navbar/Navbar';
+import LoginDetails from './Components/Authentication/Login/LoginDetails';
 
 function App() {
   return (
@@ -13,6 +14,9 @@ function App() {
       <Switch>
         <Route path="/dashboard">
           <AdminPanel/>
+        </Route>
+        <Route path="/login">
+          <LoginDetails/>
         </Route>
         <Route path="/blogs">
          <BlogCard/>
