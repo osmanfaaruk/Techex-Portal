@@ -3,8 +3,8 @@ import { Link } from 'react-router-dom';
 import './Navbar.css';
 const Navbar = () => {
     return (
-        <div className="container">
-            <nav className="navbar navbar-expand-lg navbar-light bg-light">
+        <div className="container fixed-top bg-light">
+            <nav className="navbar navbar-expand-lg navbar-light  ">
   <div className="container-fluid">
     <Link className="navbar-brand" style={{fontSize:"30px", fontWeight:"700", fontFamily:"arial",}} href="home">TECHEX-PORTAL</Link>
     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
