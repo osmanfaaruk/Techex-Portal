@@ -1,4 +1,5 @@
 import React from 'react';
+import CardSection from './CardSection/CardSection';
 import HeaderCarousel from './HeaderCarosel/HeaderCarousel';
 import HomeLayout from './HomeLayout';
 import Navbar from './Navbar/Navbar';
@@ -11,6 +12,7 @@ const Home = () => {
             <Navbar />
             <HeaderCarousel/>
             <HomeLayout />
+            <CardSection/>
             <NewsLatter/>
             <Footer/>
         </div>
