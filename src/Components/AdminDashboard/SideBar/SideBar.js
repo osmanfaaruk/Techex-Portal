@@ -24,22 +24,11 @@ const SideBar = () => {
             </Link>
        <br/>
        <br/>
-           <Link style={{textDecoration:"none", color:"white"}} to="/dashboard/add-services">
-            <button style={{width:'300px'}} className="btn btn-outline-dark" type="button">
-            Add Service</button>
-            </Link>
-       <br/>
-       <br/>
            <Link style={{textDecoration:"none", color:"white"}} to="/dashboard/make-admin">
             <button style={{width:'300px'}} className="btn btn-outline-dark" type="button">
             Make Admin</button>
             </Link>
-       <br/>
-       <br/>
-            <Link style={{textDecoration:"none"}} to="/dashboard/manage-services">
-            <button style={{width:'300px'}} className="btn btn-outline-dark" type="button">
-            Manage Services</button>
-            </Link>
+       
       </div>
         </div>
        </div>

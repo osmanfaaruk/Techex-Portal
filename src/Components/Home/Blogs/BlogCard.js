@@ -1,4 +1,6 @@
+
 import React, {useEffect, useState } from "react";
+import { Link } from 'react-router-dom';
 
 const BlogCard = () => {
   const [blogs, setBlogs] = useState([]);
@@ -15,7 +17,8 @@ const BlogCard = () => {
            
             {
                 blogs.map(blog=> 
-                    <div className="card mb-3 container shadow-sm p-3 mb-5 bg-body rounded" style={{maxWidth: "900px"}}>
+                    <Link to={`/fullBlog/${blog._id}`}>
+                        <div className="card mb-3 container shadow-sm p-3 mb-5 bg-body rounded" style={{maxWidth: "900px"}}>
                     <div className="row g-0">
                       <div className="col-md-4">
                         <img src={blog.imageURL} className="img-fluid rounded-start" alt="..."/>
@@ -29,6 +32,7 @@ const BlogCard = () => {
                       </div>
                     </div>
                   </div>
+                    </Link>
 
 
 

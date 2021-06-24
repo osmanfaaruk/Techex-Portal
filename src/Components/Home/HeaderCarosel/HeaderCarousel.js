@@ -12,7 +12,7 @@ const HeaderCarousel = () => {
       <div className="carousel-item active ">
         <img src={pic4 } className="d-block img w-100" alt="..."/>
         <div className="carousel-caption d-none d-md-block carousel-container">
-        <h2 className="fw-bolder">Processor in Future</h2>
+        <h2 className="fw-bolder"> Game Platform</h2>
 
         <p >Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum doloremque fugiat aspernatur voluptatem quae voluptatum quos beatae accusamus! Dignissimos neque pariatur rerum reprehenderit autem corporis. Deleniti tempore tempora quam numquam?</p>
       </div>
@@ -39,7 +39,7 @@ const HeaderCarousel = () => {
       <div className="carousel-item">
         <img src={pic1} className="d-block img w-100" alt="..."/>
         <div className="carousel-caption d-none d-md-block carousel-container">
-        <h2 className="fw-bolder">Game Platform</h2>
+        <h2 className="fw-bolder"> Processor in Future</h2>
 
         <p >Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum doloremque fugiat aspernatur voluptatem quae voluptatum quos beatae accusamus! Dignissimos neque pariatur rerum reprehenderit autem corporis. Deleniti tempore tempora quam numquam?</p>
       </div>

@@ -3,16 +3,22 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Home from './Components/Home/Home';
 import AdminPanel from './Components/AdminDashboard/AdminPanel/AdminPanel';
 import BlogCard from './Components/Home/Blogs/BlogCard';
+import FullBlog from './Components/Home/FullBlog/FullBlog';
+import Navbar from './Components/Home/Navbar/Navbar';
 
 function App() {
   return (
     <Router>
+      <Navbar/>
       <Switch>
-        <Route path="/adminPanel">
+        <Route path="/dashboard">
           <AdminPanel/>
         </Route>
         <Route path="/blogs">
          <BlogCard/>
+        </Route>
+        <Route path="/fullBlog/:blogId">
+          <FullBlog/>
         </Route>
         <Route exact path="/">
           <Home/>
