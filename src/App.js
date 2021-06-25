@@ -6,15 +6,22 @@ import BlogCard from './Components/Home/Blogs/BlogCard';
 import FullBlog from './Components/Home/FullBlog/FullBlog';
 import Navbar from './Components/Home/Navbar/Navbar';
 import LoginDetails from './Components/Authentication/Login/LoginDetails';
+import React, { createContext, useState } from "react";
+import PrivateRoute from './Components/Authentication/PrivateRoute';
+
+export const UserContext = createContext();
 
 function App() {
+  const [loggedInUser, setLoggedInUser] = useState({});
+
   return (
+    <UserContext.Provider value={[loggedInUser, setLoggedInUser]}>
     <Router>
       <Navbar/>
       <Switch>
-        <Route path="/dashboard">
+        <PrivateRoute path="/dashboard">
           <AdminPanel/>
-        </Route>
+        </PrivateRoute>
         <Route path="/login">
           <LoginDetails/>
         </Route>
@@ -29,6 +36,7 @@ function App() {
         </Route>
       </Switch>
     </Router>
+    </UserContext.Provider>
   );
 }
 

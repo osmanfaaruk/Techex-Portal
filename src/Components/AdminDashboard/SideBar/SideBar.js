@@ -28,7 +28,6 @@ const SideBar = () => {
             <button style={{width:'300px'}} className="btn btn-outline-dark" type="button">
             Make Admin</button>
             </Link>
-       
       </div>
         </div>
        </div>
