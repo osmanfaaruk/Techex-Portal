@@ -13,6 +13,8 @@ const FullBlog = () => {
       .then((response) => response.json())
       .then((data) => setFullBlog(data));
   }, [blogId]);
+  document.title = 'Blog'
+
   return (
     <section className="pb-0 pb-md-5 my-5 mt-5">
       <div className="container mb-5">

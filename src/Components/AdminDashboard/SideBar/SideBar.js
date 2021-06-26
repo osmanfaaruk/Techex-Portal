@@ -1,10 +1,30 @@
-import React from 'react';
+import React, { useContext , useEffect, useState} from 'react';
 import { Link } from 'react-router-dom';
+import { UserContext  } from '../../../App';
 
 
 const SideBar = () => {
+    const [loggedInUser, setLoggedInUser] = useContext(UserContext);
+    const [isAdmin, setAdmin] = useState(false);
+
+
+
+    useEffect(() => {
+        fetch('http://localhost:4000/isAdmin', {
+            method: 'POST',
+            headers: {'content-type': 'application/json'},
+            body: JSON.stringify({email: loggedInUser.email})
+        })
+        .then(res => res.json())
+        .then(data =>setAdmin(data))
+    },[])
+
+    document.title = 'Admin Panel'
+
     return (
-        <div  style={{height:"100vh", backgroundColor:'#82ccdd'}}>
+       <div>
+           
+          {isAdmin && <div  style={{height:"100vh", backgroundColor:'#82ccdd'}}>
         <div className="selection-part text-center"> 
        <br/>
        <br/>
@@ -29,6 +49,10 @@ const SideBar = () => {
             Make Admin</button>
             </Link>
       </div>
+        </div>
+       </div>}
+        <div className="text-center" >
+        <h1 style={{color:'red', textAlign:'center', marginTop:'50%', marginLeft:'50%'}}>You are not admin</h1>
         </div>
        </div>
        

@@ -14,7 +14,12 @@ const BlogCard = () => {
 
     return (
         <div>
-           
+          <div className="spinner" >
+        {blogs.length === 0 &&
+         <div className="spinner-border" style={{marginBottom:"1000px" ,marginLeft:'400px'}} role="status"><span className="visually-hidden">Loading...</span>
+        </div>
+           }
+        </div>
             {
                 blogs.map(blog=> 
                     <Link to={`/fullBlog/${blog._id}`}>

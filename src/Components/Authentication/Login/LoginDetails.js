@@ -138,6 +138,7 @@ const setUserToken = () => {
   //   authListener();
   // }, []);
 
+  document.title = 'Login'
   return (
     <div>
       <div className="login">

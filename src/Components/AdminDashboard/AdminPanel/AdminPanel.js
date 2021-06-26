@@ -1,5 +1,6 @@
 import React from 'react';
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import AdminAccess from '../AdminList/AdminAccess';
 import BlogList from '../BlogList/BlogList';
 import BlogPost from '../BlogPost/BlogPost';
 import SideBar from "../SideBar/SideBar";
@@ -22,7 +23,7 @@ const AdminPanel = () => {
                 <BlogList/>
             </Route>
             <Route path="/dashboard/make-admin">
-                
+                <AdminAccess/>
             </Route>
           </div>
         </Switch>
