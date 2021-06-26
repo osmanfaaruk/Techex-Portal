@@ -6,7 +6,7 @@ const BlogCard = () => {
   const [blogs, setBlogs] = useState([]);
 
   useEffect(() =>{
-      const url = "http://localhost:4000/blogs";
+      const url = "https://still-shore-02397.herokuapp.com/blogs";
       fetch(url)
       .then(res => res.json())
       .then(data => setBlogs(data))

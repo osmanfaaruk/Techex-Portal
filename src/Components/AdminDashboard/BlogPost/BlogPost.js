@@ -14,7 +14,7 @@ const BlogPost = () => {
             time: (new Date().toDateString("dddd, mmmm, yyyy"))
         }
 
-        const url = `http://localhost:4000/addBlogs`;
+        const url = `https://still-shore-02397.herokuapp.com/addBlogs`;
         fetch(url, {
             method: 'POST',
             headers: {

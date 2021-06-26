@@ -8,7 +8,7 @@ const FullBlog = () => {
   const [fullBlog, setFullBlog] = useState({});
 
   useEffect(() => {
-    const url = `http://localhost:4000/blogs/${blogId}`;
+    const url = `https://still-shore-02397.herokuapp.com/blogs/${blogId}`;
     fetch(url)
       .then((response) => response.json())
       .then((data) => setFullBlog(data));

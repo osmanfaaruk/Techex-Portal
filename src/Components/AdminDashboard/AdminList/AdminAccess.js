@@ -14,7 +14,7 @@ const AdminAccess = () => {
           email: data.email,
         };
     
-        const url = `http://localhost:4000/addAdmin`;
+        const url = `https://still-shore-02397.herokuapp.com/addAdmin`;
         fetch(url, {
           method: "POST",
           headers: {

@@ -7,7 +7,7 @@ const BlogList = () => {
 
 
     const handleDeleteBlog = (id) => {
-        fetch(`http://localhost:4000/delete/${id}`,{
+        fetch(`https://still-shore-02397.herokuapp.com/delete/${id}`,{
             method: 'DELETE',
         })
         .then((res) => res.json())
@@ -16,7 +16,7 @@ const BlogList = () => {
 
 
     useEffect(()=>{
-        fetch('http://localhost:4000/blogs')
+        fetch('https://still-shore-02397.herokuapp.com/blogs')
         .then(response => response.json())
         .then(data => setManageBlog(data))
     },[manageBlog])
